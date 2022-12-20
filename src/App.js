@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Counter from "./components/Counter";
 import Card from "./components/Card.js"
-import sourGummyDrops from "./assets/sour-gummy-drops.jpg"
+import hershey from "./assets/hershey.png"
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         text="Score:"
         count="3"
       />
-      <Card image={sourGummyDrops} text="sour gummy drops" />
+      <Card image={hershey} text="Hershey Chocolate" />
     </div>
   );
 }
