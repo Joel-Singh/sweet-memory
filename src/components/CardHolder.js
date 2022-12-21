@@ -37,7 +37,7 @@ export default function CardHolder(props) {
   }
 
   return (
-    <div class="card-holder">
+    <div className="card-holder">
       {cards}
     </div>
   )
