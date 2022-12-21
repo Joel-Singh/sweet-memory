@@ -6,6 +6,22 @@
   --pink: #FF3F8B;
 }
 
+body {
+  background-color: var(--pink);
+}
+
+.card-holder {
+  background-color: var(--yellow);
+}
+
+.card-holder > .card {
+  background-color: var(--greenish-blue);
+}
+
+.header {
+  border-bottom: 5px solid var(--yellow);
+}
+
 .app {
   display: grid;
   grid-template-areas:
