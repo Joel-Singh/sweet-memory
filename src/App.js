@@ -27,6 +27,10 @@ function App() {
       {cardHolderOnScreen}
     </div>
   );
+
+  function shuffleCardHolder() {
+    setCardHolderOnScreen(<CardHolder shouldShuffle={true} />)
+  }
 }
 
 export default App;
