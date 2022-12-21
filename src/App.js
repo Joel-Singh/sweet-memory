@@ -12,7 +12,7 @@ function App() {
         text="Score:"
         count="3"
       />
-      <Card image={hershey} text="Hershey Chocolate" />
+      <Card image={hershey}/>
     </div>
   );
 }

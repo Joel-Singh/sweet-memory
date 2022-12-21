@@ -1,9 +1,6 @@
 export default function Card(props) {
-  const { image, text } = props
+  const { image } = props
   return (
-    <div className="card">
-      <img src={image} />
-      <span>{text}</span>
-    </div>
+    <img src={image} />
   )
 }
