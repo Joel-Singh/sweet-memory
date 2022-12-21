@@ -23,11 +23,14 @@
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-area: card-holder
+  grid-area: card-holder;
+
+  padding: 30px;
+  gap: 10px;
 }
 
 .card-holder > img {
-  max-width: 100px;
+  width: 20vw;
 }
 
 .header {
