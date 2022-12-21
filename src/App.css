@@ -1,11 +1,36 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "current-score best-score"
+    "card-holder card-holder";
+
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
 .card-holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
+  grid-area: card-holder
 }
 
 .card-holder > img {
   max-width: 100px;
 }
+
+.header {
+  grid-area: header
+}
+
+.current-score {
+  grid-area: current-score
+}
+
+.best-score {
+  grid-area: best-score
+}
+
