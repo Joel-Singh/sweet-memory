@@ -18,6 +18,34 @@ body {
   margin: 0px;
 }
 
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "current-score best-score"
+    "card-holder card-holder";
+
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+
+.header {
+  grid-area: header
+}
+
+.current-score {
+  grid-area: current-score
+}
+
+.best-score {
+  grid-area: best-score
+}
+
+.card-holder {
+  grid-area: card-holder;
+}
+
 .card-holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -66,32 +94,3 @@ body {
   color: white;
   margin-bottom: 10px;
 }
-
-.app {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "current-score best-score"
-    "card-holder card-holder";
-
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-}
-
-
-.header {
-  grid-area: header
-}
-
-.current-score {
-  grid-area: current-score
-}
-
-.best-score {
-  grid-area: best-score
-}
-
-.card-holder {
-  grid-area: card-holder;
-}
-
