@@ -22,6 +22,18 @@ body {
   background-color: var(--yellow);
 }
 
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-area: card-holder;
+
+  padding: 30px;
+  gap: 10px;
+}
+
 .card-holder > .card {
   background-color: var(--light-blue);
   padding: 10px;
@@ -59,18 +71,6 @@ body {
 
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-}
-
-.card-holder {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-  grid-area: card-holder;
-
-  padding: 30px;
-  gap: 10px;
 }
 
 .card-holder > img {
