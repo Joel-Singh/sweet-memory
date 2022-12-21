@@ -8,6 +8,9 @@ function App() {
   const [currentScore, setCurrentScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
 
+  const [cardHolderOnScreen, setCardHolderOnScreen] =
+    useState(<CardHolder shouldShuffle={true}/>)
+
   return (
     <div className="app">
       <Header />
@@ -21,7 +24,7 @@ function App() {
         text="Best:"
         count={bestScore}
       />
-      <CardHolder shouldShuffle={true} />
+      {cardHolderOnScreen}
     </div>
   );
 }
