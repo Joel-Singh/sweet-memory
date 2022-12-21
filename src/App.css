@@ -1,3 +1,11 @@
+:root {
+  --light-blue: #7CFDFF;
+  --greenish-blue: #87E7C7;
+  --green: #84E88D;
+  --yellow: #EFE58C;
+  --pink: #FF3F8B;
+}
+
 .app {
   display: grid;
   grid-template-areas:
