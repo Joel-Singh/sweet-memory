@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Counter from "./components/Counter";
-import Card from "./components/Card.js"
-import hershey from "./assets/hershey.png"
+import CardHolder from "./components/CardHolder";
+import { useEffect } from "react";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         text="Score:"
         count="3"
       />
-      <Card image={hershey}/>
+      <CardHolder shouldShuffle={true} />
     </div>
   );
 }
