@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Counter from "./components/Counter";
 import CardHolder from "./components/CardHolder";
-import { useEffect } from "react";
 import appCss from "./App.css"
 
 function App() {
