@@ -19,10 +19,6 @@ body {
 }
 
 .card-holder {
-  background-color: var(--yellow);
-}
-
-.card-holder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -32,6 +28,7 @@ body {
 
   padding: 30px;
   gap: 10px;
+  background-color: var(--yellow);
 }
 
 .card-holder > .card {
