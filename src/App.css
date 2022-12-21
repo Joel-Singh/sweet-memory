@@ -35,6 +35,7 @@ body {
   background-color: var(--light-blue);
   padding: 10px;
   border-radius: 20px;
+  width: 20vw;
 }
 
 .card-holder > .card:hover {
@@ -70,9 +71,6 @@ body {
   grid-template-rows: auto auto auto;
 }
 
-.card-holder > img {
-  width: 20vw;
-}
 
 .header {
   grid-area: header
