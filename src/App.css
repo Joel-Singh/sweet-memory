@@ -24,6 +24,12 @@ body {
 
 .card-holder > .card {
   background-color: var(--greenish-blue);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-holder > .card:hover {
+  background-color: var(--light-blue);
 }
 
 .header {
