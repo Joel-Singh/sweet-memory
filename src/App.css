@@ -24,7 +24,6 @@ body {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  grid-area: card-holder;
 
   padding: 30px;
   gap: 10px;
@@ -90,5 +89,9 @@ body {
 
 .best-score {
   grid-area: best-score
+}
+
+.card-holder {
+  grid-area: card-holder;
 }
 
