@@ -33,7 +33,7 @@ export default function CardHolder(props) {
 
   const cards = cardsInformation.map(createCard)
 
-  const { shouldShuffle } = props
+  const shouldShuffle = props.shouldShuffle
   if (shouldShuffle)
     shuffle(cards)
 
