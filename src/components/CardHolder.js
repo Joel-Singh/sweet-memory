@@ -54,6 +54,7 @@ export default function CardHolder(props) {
         id={name}
         key={name}
         image={image}
+        onClick={props.onCardClick}
       />
     )
   }
