@@ -32,9 +32,8 @@ export default function CardHolder(props) {
   ]
 
   const { shouldShuffle } = props
-  if (shouldShuffle) {
+  if (shouldShuffle)
     shuffle(cards)
-  }
 
   return (
     <div className="card-holder">
