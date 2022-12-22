@@ -16,20 +16,22 @@ import twizzlers from "../assets/twizzlers.png"
 
 
 export default function CardHolder(props) {
-  const cards = [
-    <Card id="bottlecaps" key="bottlecaps" image={bottlecaps} />,
-    <Card id="gobstopper" key="gobstopper" image={gobstopper} />,
-    <Card id="hershey" key="hershey" image={hershey} />,
-    <Card id="jollyRancher" key="jollyRancher" image={jollyRancher} />,
-    <Card id="laffyTaffy" key="laffyTaffy" image={laffyTaffy} />,
-    <Card id="lifeSavers" key="lifeSavers" image={lifeSavers} />,
-    <Card id="nerds" key="nerds" image={nerds} />,
-    <Card id="sourPatch" key="sourPatch" image={sourPatch} />,
-    <Card id="starburst" key="starburst" image={starburst} />,
-    <Card id="swedishFish" key="swedishFish" image={swedishFish} />,
-    <Card id="tootsieRoll" key="tootsieRoll" image={tootsieRoll} />,
-    <Card id="twizzlers" key="twizzlers" image={twizzlers} />,
+  const cardsInformation = [
+    { name: "bottlecaps", image: bottlecaps },
+    { name: "gobstopper", image: gobstopper },
+    { name: "hershey", image: hershey },
+    { name: "jollyRancher", image: jollyRancher },
+    { name: "laffyTaffy", image: laffyTaffy },
+    { name: "lifeSavers", image: lifeSavers },
+    { name: "nerds", image: nerds },
+    { name: "sourPatch", image: sourPatch },
+    { name: "starburst", image: starburst },
+    { name: "swedishFish", image: swedishFish },
+    { name: "tootsieRoll", image: tootsieRoll },
+    { name: "twizzlers", image: twizzlers },
   ]
+
+  const cards = cardsInformation.map(createCard)
 
   const { shouldShuffle } = props
   if (shouldShuffle)
@@ -43,5 +45,16 @@ export default function CardHolder(props) {
 
   function shuffle(array) {
     array.sort(() => Math.random() - 0.5)
+  }
+
+  function createCard(cardInformation) {
+    const {name, image} = cardInformation
+    return (
+      <Card
+        id={name}
+        key={name}
+        image={image}
+      />
+    )
   }
 }
