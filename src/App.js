@@ -4,6 +4,7 @@ import CardHolder from "./components/CardHolder";
 import appCss from "./App.css"
 import { useState } from "react";
 
+let clickedCards = []
 function App() {
   const [currentScore, setCurrentScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
@@ -29,7 +30,9 @@ function App() {
   );
 
   function onCardClick(event) {
-    console.log("Card clicked!")
+    const clickedCard = event.target.id
+    clickedCards.push(clickedCard)
+    shuffleCardHolder()
   }
 
   function shuffleCardHolder() {
