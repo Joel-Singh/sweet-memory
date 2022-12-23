@@ -9,7 +9,7 @@ function App() {
   const [bestScore, setBestScore] = useState(0)
 
   const [cardHolderOnScreen, setCardHolderOnScreen] =
-    useState(<CardHolder shouldShuffle={true}/>)
+    useState(<CardHolder shouldShuffle={true} onCardClick={onCardClick}/>)
 
   return (
     <div className="app">
@@ -28,8 +28,12 @@ function App() {
     </div>
   );
 
+  function onCardClick(event) {
+    console.log("Card clicked!")
+  }
+
   function shuffleCardHolder() {
-    setCardHolderOnScreen(<CardHolder shouldShuffle={true} />)
+    setCardHolderOnScreen(<CardHolder shouldShuffle={true} onCardClick={onCardClick}/>)
   }
 }
 
