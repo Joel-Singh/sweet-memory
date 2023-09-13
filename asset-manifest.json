@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sweet-memory/static/css/main.63d78414.css",
+    "main.js": "/sweet-memory/static/js/main.baccf3ee.js",
+    "static/media/starburst.png": "/sweet-memory/static/media/starburst.06c36a438b4d7dde3a66.png",
+    "static/media/bottlecaps.png": "/sweet-memory/static/media/bottlecaps.23db2289973bccd43a96.png",
+    "static/media/swedish-fish.png": "/sweet-memory/static/media/swedish-fish.b456f2028cc1a6e905e3.png",
+    "static/media/nerds.png": "/sweet-memory/static/media/nerds.4e3d56a3f2daddcd53ea.png",
+    "static/media/tootsie-roll.png": "/sweet-memory/static/media/tootsie-roll.8fca56a71d079fee258c.png",
+    "static/media/gobstopper.png": "/sweet-memory/static/media/gobstopper.7d26dd842ea49ed827c2.png",
+    "static/media/laffy-taffy.png": "/sweet-memory/static/media/laffy-taffy.fdb3125a312613784bf7.png",
+    "static/media/sour-patch.png": "/sweet-memory/static/media/sour-patch.7b7146c563a7d79356fc.png",
+    "static/media/life-savers.png": "/sweet-memory/static/media/life-savers.ed85ba6000c10530995a.png",
+    "static/media/hershey.png": "/sweet-memory/static/media/hershey.0263b0bab5c8002f91e3.png",
+    "static/media/jolly-rancher.png": "/sweet-memory/static/media/jolly-rancher.727dcd1e96e1c99b5566.png",
+    "static/media/twizzlers.png": "/sweet-memory/static/media/twizzlers.63d4ddd67d63644b4601.png",
+    "index.html": "/sweet-memory/index.html",
+    "main.63d78414.css.map": "/sweet-memory/static/css/main.63d78414.css.map",
+    "main.baccf3ee.js.map": "/sweet-memory/static/js/main.baccf3ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63d78414.css",
+    "static/js/main.baccf3ee.js"
+  ]
+}
