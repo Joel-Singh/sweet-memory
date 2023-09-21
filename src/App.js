@@ -40,6 +40,14 @@ function App() {
     const bestScore = bestScoreRef.current
 
     if (!hasCardBeenClickedBefore(clickedCard)) {
+      handleFirstTimeCardClick()
+    } else if (hasCardBeenClickedBefore(clickedCard)) {
+      handleRepeatCardClick()
+    }
+
+    shuffleCardHolder()
+
+    function handleFirstTimeCardClick() {
       setCurrentScore(prevScore => prevScore + 1)
 
       if (currentScore >= bestScore) {
@@ -47,12 +55,12 @@ function App() {
       }
 
       clickedCards.push(clickedCard)
-    } else if (hasCardBeenClickedBefore(clickedCard)) {
+    }
+
+    function handleRepeatCardClick() {
       setCurrentScore(0)
       clickedCards = []
     }
-
-    shuffleCardHolder()
   }
 
   function shuffleCardHolder() {
