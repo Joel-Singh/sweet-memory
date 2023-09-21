@@ -1,8 +1,14 @@
 export default function Counter(props) {
-  const { text, count, className } = props
+  const { text, count, className, isFlashing } = props
   const textContent = text + " " + count
 
   return (
-    <span className={className + " counter"}>{textContent}</span>
+    <span
+      className={
+        className +
+        " counter" +
+        (isFlashing ? " flash" : "")
+      }
+    >{textContent}</span>
   )
 }

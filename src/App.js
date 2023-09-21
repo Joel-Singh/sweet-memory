@@ -17,11 +17,15 @@ function App() {
   const [cardHolderOnScreen, setCardHolderOnScreen] =
     useState(<CardHolder shouldShuffle={true} onCardClick={onCardClick}/>)
 
+  const [flash, setFlash] = useState(false)
+  const [lastFlashTimeout, setLastFlashTimeout] = useState(null)
+
   return (
     <div className="app">
       <Header />
       <Counter
         className="current-score"
+        isFlashing={flash}
         text="Current:"
         count={currentScore}
       />
@@ -53,8 +57,19 @@ function App() {
       if (currentScore >= bestScore) {
         setBestScore(currentScore + 1)
       }
+      flashCounter()
 
       clickedCards.push(clickedCard)
+
+      function flashCounter() {
+        setFlash(false)
+        setTimeout(() => {
+          setFlash(true)
+          clearTimeout(lastFlashTimeout)
+          const timeoutId = setTimeout(() => setFlash(false), 500)
+          setLastFlashTimeout(timeoutId)
+        }, 0)
+      }
     }
 
     function handleRepeatCardClick() {

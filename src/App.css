@@ -11,6 +11,7 @@
   --green: #84E88D;
   --yellow: #EFE58C;
   --pink: #FF3F8B;
+  --flash-green: #00FF00;
 }
 
 body {
@@ -93,4 +94,13 @@ body {
   justify-self: center;
   color: white;
   margin-bottom: 10px;
+}
+
+.flash {
+  animation: flash 0.5s;
+}
+
+@keyframes flash {
+  from {background-color: var(--flash-green);}
+  to {background-color: transparent;}
 }
