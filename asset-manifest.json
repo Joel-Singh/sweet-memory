@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sweet-memory/static/css/main.63d78414.css",
-    "main.js": "/sweet-memory/static/js/main.d6a00fde.js",
+    "main.css": "/sweet-memory/static/css/main.9257e30d.css",
+    "main.js": "/sweet-memory/static/js/main.575b7479.js",
     "static/media/starburst.png": "/sweet-memory/static/media/starburst.06c36a438b4d7dde3a66.png",
     "static/media/bottlecaps.png": "/sweet-memory/static/media/bottlecaps.23db2289973bccd43a96.png",
     "static/media/swedish-fish.png": "/sweet-memory/static/media/swedish-fish.b456f2028cc1a6e905e3.png",
@@ -15,11 +15,11 @@
     "static/media/jolly-rancher.png": "/sweet-memory/static/media/jolly-rancher.727dcd1e96e1c99b5566.png",
     "static/media/twizzlers.png": "/sweet-memory/static/media/twizzlers.63d4ddd67d63644b4601.png",
     "index.html": "/sweet-memory/index.html",
-    "main.63d78414.css.map": "/sweet-memory/static/css/main.63d78414.css.map",
-    "main.d6a00fde.js.map": "/sweet-memory/static/js/main.d6a00fde.js.map"
+    "main.9257e30d.css.map": "/sweet-memory/static/css/main.9257e30d.css.map",
+    "main.575b7479.js.map": "/sweet-memory/static/js/main.575b7479.js.map"
   },
   "entrypoints": [
-    "static/css/main.63d78414.css",
-    "static/js/main.d6a00fde.js"
+    "static/css/main.9257e30d.css",
+    "static/js/main.575b7479.js"
   ]
 }
