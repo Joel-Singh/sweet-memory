@@ -45,12 +45,13 @@ function App() {
       if (currentScore >= bestScore) {
         setBestScore(currentScore + 1)
       }
+
+      clickedCards.push(clickedCard)
     } else if (hasCardBeenClickedBefore(clickedCard)) {
       setCurrentScore(0)
       clickedCards = []
     }
 
-    clickedCards.push(clickedCard)
     shuffleCardHolder()
   }
 
